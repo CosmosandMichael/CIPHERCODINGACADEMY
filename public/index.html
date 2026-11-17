@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b0d10"><title>CIPHER Code Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">C</span><span>CIPHER<span class="brand-light"> CODE ACADEMY</span></span></a><div class="top-actions"><span class="status-dot"></span><span class="small-muted">LEARN. BUILD. ADVANCE.</span></div></header>
+<main id="authView" class="auth-layout">
+ <section class="hero-panel">
+  <div class="eyebrow"><span class="line"></span> THE NEXT GENERATION OF DEVELOPERS</div>
+  <h1>Build skills.<br><span class="gradient-text">Build the future.</span></h1>
+  <p class="hero-copy">A focused learning environment for curious minds, ambitious builders and the next generation of software creators.</p>
+  <div class="hero-visual" aria-label="Abstract programming workspace illustration">
+   <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="code-window"><div class="window-dots"><i></i><i></i><i></i></div><div class="code-lines"><b>const</b> future = <em>"yours";</em><br><b>function</b> <strong>build</strong>() {<br>&nbsp;&nbsp;learn();<br>&nbsp;&nbsp;create();<br>&nbsp;&nbsp;return <em>progress;</em><br>}</div><div class="code-cursor"></div></div><div class="float-chip chip-a">{"< />"} <small>CODE</small></div><div class="float-chip chip-b">01 <small>LEARN</small></div>
+  </div>
+  <div class="hero-foot"><span>01 — LEARN WITH PURPOSE</span><span>02 — CREATE WITH CONFIDENCE</span><span>03 — GROW TOGETHER</span></div>
+ </section>
+ <section class="auth-panel">
+  <div class="auth-card">
+   <div class="mobile-brand"><span class="brand-mark">C</span> CIPHER</div>
+   <div class="eyebrow">YOUR LEARNING SPACE</div><h2 id="authTitle">Welcome back.</h2><p id="authSubtitle" class="muted">Sign in to continue your learning journey.</p>
+   <form id="loginForm" class="form-stack">
+    <label>Email address<input name="email" type="email" autocomplete="username" placeholder="you@example.com" required></label>
+    <label>Password<input name="password" type="password" autocomplete="current-password" placeholder="Enter your password" required></label>
+    <label id="totpWrap" class="hidden">Authenticator code<input name="totp" inputmode="numeric" maxlength="6" placeholder="6-digit code"></label>
+    <button class="btn btn-primary" type="submit">Sign in <span>→</span></button>
+   </form>
+   <form id="registerForm" class="form-stack hidden">
+    <label>Full name<input name="name" autocomplete="name" placeholder="Your full name" required minlength="2"></label>
+    <label>Email address<input name="email" type="email" autocomplete="email" placeholder="you@example.com" required></label>
+    <label>Create password<input name="password" type="password" autocomplete="new-password" placeholder="At least 10 characters" required minlength="10"></label>
+    <button class="btn btn-primary" type="submit">Create learner account <span>→</span></button>
+   </form>
+   <form id="verifyForm" class="form-stack hidden">
+    <label>Email address<input name="email" type="email" required></label>
+    <label>Verification code<input name="code" inputmode="numeric" maxlength="6" required></label>
+    <button class="btn btn-primary" type="submit">Verify email <span>→</span></button>
+   </form>
+   <div id="authMessage" class="notice hidden" role="status"></div>
+   <div class="auth-switch"><span id="switchText">New to CIPHER?</span> <button id="switchMode" class="text-button" type="button">Create an account</button></div>
+   <div class="auth-bottom"><span>SECURE ACCESS</span><span>© CIPHER TECHNOLOGIES</span></div>
+  </div>
+ </section>
+</main>
+<main id="appView" class="app-shell hidden">
+ <aside class="sidebar"><a class="brand" href="#"><span class="brand-mark">C</span><span>CIPHER<span class="brand-light"> ACADEMY</span></span></a><div class="side-label">WORKSPACE</div><nav id="sideNav"></nav><div class="sidebar-bottom"><div class="profile-mini"><div class="avatar" id="avatarInitial">C</div><div><b id="sideName">Member</b><small id="sideRole">LEARNER</small></div></div><button id="logoutBtn" class="logout-btn">Sign out ↗</button></div></aside>
+ <section class="workspace"><header class="workspace-head"><div><div class="eyebrow" id="pageEyebrow">CIPHER LEARNING ENVIRONMENT</div><h1 id="pageTitle">Overview</h1></div><div class="head-right"><span class="live-pill"><i></i> SYSTEM ONLINE</span><div class="head-avatar" id="headAvatar">C</div></div></header>
+ <div id="pageContent" class="page-content"></div></section>
+</main>
+<div id="toast" class="toast" role="status"></div>
+<script src="/js/app.js" defer></script>
+</body></html>
